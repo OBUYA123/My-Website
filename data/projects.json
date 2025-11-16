@@ -1,0 +1,18 @@
+[
+  {
+    "id": "project-1",
+    "title": "Portfolio Website",
+    "description": "A responsive, accessible portfolio built with semantic HTML and modern CSS.",
+    "tech": ["HTML","CSS","JavaScript"],
+    "image": "assets/img/project-portfolio.jpg",
+    "link": "#"
+  },
+  {
+    "id": "project-2",
+    "title": "Client Dashboard",
+    "description": "Interactive dashboard for tracking metrics and tasks.",
+    "tech": ["React","D3","Node.js"],
+    "image": "assets/img/project-dashboard.jpg",
+    "link": "#"
+  }
+]

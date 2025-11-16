@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Obuya Oduor — Portfolio</title>
+  <meta name="description" content="Obuya Oduor — Portfolio: projects, booking, and contact." />
+  <meta property="og:title" content="Obuya Oduor — Portfolio" />
+  <meta property="og:description" content="View projects, book work, and contact Obuya Oduor." />
+  <link rel="icon" href="assets/img/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-with-image">
+        <img src="img/profile.jpg" alt="Obuya Oduor" class="brand-image" />
+        <a class="brand" href="#hero">Obuya Oduor</a>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://obuya-oduor.my.canva.site/design-graphic-design-portfolio-website-in-black-white-dark-classic-minimal-style" target="_blank" rel="noopener">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Obuya Oduor</h1>
+          <p class="tagline">Frontend developer & consultant — I build elegant, accessible websites.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn" href="#booking">Book Me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="img/me.jpg.jpg" alt="Obuya Oduor" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About</h2>
+      <p>Hi — I'm Obuya. I design and develop accessible, high-performance web experiences for clients and teams. I focus on modern CSS, responsive interfaces, and maintainable code.</p>
+      <p class="skills"><strong>Skills:</strong> HTML, CSS, JavaScript, Accessibility, Performance</p>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+      <div id="projects-list" class="projects-grid">
+        <!-- Projects are rendered here from `data/projects.json` -->
+      </div>
+    </section>
+
+    <section id="booking" class="booking container">
+      <h2>Booking</h2>
+      <p>If you'd like to book a consultation or a project, click the button to schedule a meeting.</p>
+      <p><a class="btn btn-primary" href="https://calendly.com/your-calendly" target="_blank" rel="noopener">Schedule on Calendly</a></p>
+      <p class="muted">Prefer a direct request? Use the contact form below.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <form id="contact-form" class="form" method="POST" action="https://formspree.io/f/xpwkywvq">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Obuya Oduor </p>
+      <p class="social">
+        <a href="mailto:obuyahezekiah@gmail.com">Email</a> · <a href="#">GitHub</a> · <a href="#">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
